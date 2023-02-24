@@ -32,6 +32,7 @@ set :views, './app/views'
         @todos = Todo.all
         erb :todos
     end
+    
     get '/todos' do
         todos = Todo.all
         [200, todos.to_json]
