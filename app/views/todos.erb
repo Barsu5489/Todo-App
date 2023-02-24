@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p>Welcome</p>
+    <ol type= "1">
+    <% @todos.each do |todo| %>
+    <li><%= todo.description %></li>
+    <% end %>
+    </ol>
+</body>
+</html>
